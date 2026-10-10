@@ -234,7 +234,3 @@ Use `--model_type transformer` for the RelGT model. Its neighbor-token cache (`t
 ## Reproducibility
 
 All scripts set `CUBLAS_WORKSPACE_CONFIG` and fix every random seed (`Utils.fix_randomness`). The data loaders are built deterministically (`Utils.create_consistent_loader`), so the same seed explains the same rows in the same order.
-
-## Acknowledgements
-
-The Mask Learning explainer follows *Database Views as Explanations for Relational Deep Learning* (PVLDB 19(7), 2026). The model code in `MaskLearningExplainer/src/rdl_explain_files/model/` is adapted from [RelBench](https://github.com/snap-stanford/relbench), [RelGT](https://github.com/snap-stanford/relgt) and [PyTorch Frame](https://github.com/pyg-team/pytorch-frame) (MIT License). Each file's header lists its source and the changes made.
