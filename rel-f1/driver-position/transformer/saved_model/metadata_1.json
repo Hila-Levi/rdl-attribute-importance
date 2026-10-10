@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "dataset_name": "rel-f1",
+  "task_name": "driver-position",
+  "model_type": "RelGT",
+  "K": 100,
+  "local_num_layers": 1,
+  "channels": 128,
+  "out_channels": 1,
+  "global_dim": 64,
+  "heads": 4,
+  "train_mae": 4.434471625713177,
+  "val_mae": 2.998765930463731,
+  "test_mae": 6.238926896547016,
+  "entity_table": "drivers",
+  "relgt_cache_dir": "../rel-f1/driver-position/transformer/relgt-cache/rel-f1/driver-position",
+  "best_epoch": 33,
+  "epochs_run": 100,
+  "total_training_time_sec": 36585.8,
+  "avg_epoch_time_sec": 365.9
+}

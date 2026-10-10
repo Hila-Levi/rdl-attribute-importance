@@ -1,0 +1,10 @@
+{
+  "num_neighbors": [
+    25,
+    15,
+    10
+  ],
+  "batch_size": 256,
+  "temporal_strategy": "uniform",
+  "seed": 42
+}

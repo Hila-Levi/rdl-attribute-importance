@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "model_layers": 2,
+  "model_channels": 128,
+  "model_aggr": "mean",
+  "model_norm": "batch_norm",
+  "train_mae": 6.225950377539491,
+  "val_mae": 2.898902539627187,
+  "test_mae": 3.8701773864762825,
+  "entity_table": "drivers",
+  "dataset_name": "rel-f1",
+  "task_name": "driver-position",
+  "best_epoch": 19,
+  "epochs_run": 100,
+  "total_training_time_sec": 708.6,
+  "avg_epoch_time_sec": 7.1
+}

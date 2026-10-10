@@ -1,0 +1,7 @@
+{
+  "K": 100,
+  "batch_size": 64,
+  "num_workers_precompute": 4,
+  "num_workers_loader": 2,
+  "precomputed_dir": "../rel-f1/driver-position/transformer/relgt-cache/rel-f1/driver-position"
+}

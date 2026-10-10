@@ -1,0 +1,39 @@
+# Python 3.11. All versions below are pinned to exactly what is confirmed
+# working in the `research_env` conda environment on our GPU server
+# (verified from its own `pip install` output) — NOT left unpinned, because
+# an unpinned sentence-transformers/transformers already floated to a newer
+# release requiring torch>=2.5 once, which crashed against torch==2.4.0.
+#
+# torch-geometric's compiled extensions (torch-scatter, torch-sparse,
+# torch-cluster, torch-spline-conv, pyg-lib) must come from the wheel index
+# matching this exact torch + CUDA build. research_env's own installed
+# wheels are tagged "+pt24cu121" (torch 2.4, CUDA 12.1), so that's the index
+# used below. If you set this up on a different machine, check
+# `nvidia-smi` there first and swap "cu121" for the right tag if it differs
+# — see https://data.pyg.org/whl/ for the available combinations.
+--find-links https://data.pyg.org/whl/torch-2.4.0+cu121.html
+
+torch==2.4.0
+torch-geometric==2.7.0
+torch-scatter==2.1.2
+torch-sparse==0.6.18
+torch-cluster==1.6.3
+torch-spline-conv==1.2.2
+pyg-lib==0.4.0
+pytorch-frame==0.3.0
+relbench==3.0.1
+transformers==4.57.3
+sentence-transformers==5.2.2
+scikit-learn==1.6.1
+pandas==2.3.3
+numpy==2.3.5
+scipy==1.16.3
+matplotlib==3.10.7
+tqdm==4.67.1
+PyYAML==6.0.3
+pydantic==2.12.5
+einops==0.8.2
+h5py==3.16.0
+networkx==3.6
+pyarrow==22.0.0
+jupyter
